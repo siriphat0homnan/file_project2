@@ -105,11 +105,11 @@
               <label for="date" >เดือน/วัน/ปีเกิด:</label> <input type="date" name="bday" class="form-control" style="width: 80%;"> <br>
 
               <label for="id">เลขบัตรระจำตัวประชาชน: </label>
-              <input type="text" class="form-control" name="Sid" placeholder="Citizen ID." style="width: 50%;"> <br>
+              <input type="number" pattern=".{13,}" maxlength="13" class="form-control" name="Sid"  style="width: 50%;"> <br>
               <label for="address">ที่อยู่:</label>
               <input type="text" class="form-control" name="address" placeholder="Address" style="width: 100%; height: 100%;"> <br>
               <label for="tel">เบอร์โทรศัพท์ที่สามารถติดต่อได้:</label>
-              <input type="text" class="form-control" name="tel" maxlength="10" onclick="checkTel()" placeholder="ตัวอย่าง 089XXXXXX" style="width: 50%; height: 50%;"> <br><br>
+              <input type="number" class="form-control" name="tel" maxlength="10" onclick="checkTel()" placeholder="ตัวอย่าง 089XXXXXX" style="width: 50%; height: 50%;"> <br><br>
 
 
               <label for="blood" >หมู่เลือด:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -140,7 +140,7 @@
               <br><br><br>
               <br><br><br>
               <label for="mail">E-mail:</label>
-              <input type="text" class="form-control" id="mail" placeholder="E-mail" style="width: 50%;" data-validation="email"> <br>
+              <input type="email" class="form-control" id="mail" placeholder="E-mail" style="width: 50%;" data-validation="email"> <br>
               <label for="disease">โรคประจำตัว:</label>
               <input type="text" class="form-control" id="disease" placeholder="congenital disease" style="width: 50%;"> <br>
             </div>
