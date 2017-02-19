@@ -81,10 +81,10 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="blog.php">BLOG</a></li>
                 <li><a href="health_calculator.html">Health Calculator</a></li>
                 <li><a href="InputInformation.php">input information</a></li>
-                <li><a href="home.html">Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
               </ul>
             </div>
 
@@ -97,7 +97,7 @@
             <h3>ข้อมูลผู้บริจาค</h3> <br>
           </div>
 
-          <form method="post" name="myForm" action="hello.php" onsubmit="return validateForm();" >
+          <form method="post" name="myForm" action="data.php" onsubmit="return validateForm();" >
             <div class="floating-box">
               <label for="Sname">ชื่อ:</label>
               <input type="text" class="form-control" name="Sname" placeholder="ชื่อ" style="width: 80%;"> <br>
