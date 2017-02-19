@@ -20,7 +20,15 @@
 
     </head>
     <body >
+        <script>
+            var myVar = setInterval(myTimer, 1000);
 
+            function myTimer() {
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+
+        </script>
         <div class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container">
                 <div class="navbar-header">
@@ -29,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Blood Logo</a>
+                    <a href="index.html"><img src="assets/img/logo.jpg" alt="logo" style="width:180px;height:70px;"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -75,13 +83,13 @@
         <section id="intro">
             <div class="container">
 
-                <div class="col text-center navbar col-md-5 col-sm-5 " >
-                 <p>
-                    
+                <div class="col text-center navbar col-md-4 col-sm-4">
+                   <p>
+
                     <div class="col-md-12">
                         <div class="row text-left pad-row">
                             <div class="alert alert-info">
-                                <p><span style="font-size: 20px;"><center>โอนเงินเข้าบัญชีสภากาชาดไทย</center></span></p>
+                                <p><span style="font-size: 20px;"><center><h4>โอนเงินเข้าบัญชีสภากาชาดไทย</h4></center></span></p>
                                 ชื่อบัญชี : สภากาชาดไทย <br>เพื่อการรับบริจาคเงินต่างๆ<br>
                                 เลขที่ : <span style="color: #ff0000;"><strong>XXX-X-XXXXX-X</strong></span><br>
                                 ประเภท : ออมทรัพย์<br>
@@ -96,84 +104,88 @@
                     </div>
                 </div>
                 <!-- end contact -->
-                <br>
+                <br><br>
                 <div class="col text-center navbar-right col-md-3 col-sm-3 " >
-                    
-                        <div class="row text-center pad-row">
-                            <div class="alert alert-info">
-                            <a href="bmi.html"><button class="button_bmi">Calculator BMI</button></a>
-                            
-                            <br>
-                            <br>
-                            <a href="questionaire.html"><button class="button_bmi">เช็คว่าบริจาคเลือดได้ไหม</button></a>
-                            </div>
-                        </div>
-                    
-                </div>
 
-                <!-- end bmi -->
-            </div>
+                    <div class="row text-center pad-row">
+                        <div class="alert alert-info">
+                            <span style="color: #ff0000;">
+                                <h2><b>TIME <p id="demo"></p></b></h2>
+                            </span>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <a href="bmi.php"><button class="button_bmi">Calculator BMI</button></a>
+                            <br>
+                            <br>
+                            
+                        </div>
+
+                    </div>
+
+                    <!-- end bmi -->
+                </div>
+            </section>
+
+            <!--/.JUST-INTRO END-->
+            <section  class="note-sec" >
+             <div class="container">
+                 <div class="row text-center pad-row" >
+                    <div class="col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
+                        <i class="fa fa-quote-left fa-3x"></i>
+                        <p>
+                            อยากให้ทุกคนช่วยกันบริจาคเลือด
+                        </p>
+                    </div>
+                </div>
+            </div>   
+
         </section>
 
-        <!--/.JUST-INTRO END-->
-        <section  class="note-sec" >
-           <div class="container">
-               <div class="row text-center pad-row" >
-                <div class="col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
-                    <i class="fa fa-quote-left fa-3x"></i>
+        <!--/.CLIENTS END-->
+        <section id="footer-sec" >
+
+            <div class="container">
+             <div class="row  pad-bottom" >
+                <div class="col-md-4">
+                    <h4> <strong>Project by</strong> </h4>
                     <p>
-                        อยากให้ทุกคนช่วยกันบริจาคเลือด
+                        Name: <br>
+                        Name: <br>
+                        Name: <br>
+                        Name: <br>
+
                     </p>
+
                 </div>
-            </div>
-        </div>   
-
-    </section>
-
-    <!--/.CLIENTS END-->
-    <section id="footer-sec" >
-
-        <div class="container">
-           <div class="row  pad-bottom" >
-            <div class="col-md-4">
-                <h4> <strong>Project by</strong> </h4>
-                <p>
-                    Name: <br>
-                    Name: <br>
-                    Name: <br>
-                    Name: <br>
-
-                </p>
-
-            </div>
-            <div class="col-md-4">
-                <h4> <strong>SOCIAL LINKS</strong> </h4>
-                <p>
-                 <a href="#"><i class="fa fa-facebook-square fa-3x"  ></i></a>  
-                 <a href="#"><i class="fa fa-twitter-square fa-3x"  ></i></a>  
-                 <a href="#"><i class="fa fa-linkedin-square fa-3x"  ></i></a>  
-                 <a href="#"><i class="fa fa-google-plus-square fa-3x"  ></i></a>  
-             </p>
+                <div class="col-md-4">
+                    <h4> <strong>SOCIAL LINKS</strong> </h4>
+                    <p>
+                       <a href="#"><i class="fa fa-facebook-square fa-3x"  ></i></a>  
+                       <a href="#"><i class="fa fa-twitter-square fa-3x"  ></i></a>  
+                       <a href="#"><i class="fa fa-linkedin-square fa-3x"  ></i></a>  
+                       <a href="#"><i class="fa fa-google-plus-square fa-3x"  ></i></a>  
+                   </p>
+               </div>
+               <div class="col-md-4">
+                 <h4> <strong>OUR LOCATION</strong> </h4>
+                 <p>
+                     239 ถ. ห้วยแก้ว ต.สุเทพ อ. เมือง จ. เชียงใหม่ 50200 <br/>
+                     โทรศัพท์ : 0-5394-3414-16  <br/>
+                     โทรสาร : 0-5389-2281 <br/>
+                     E-mail : compsci@cmu.ac.th
+                 </p>
+             </div>
          </div>
-         <div class="col-md-4">
-           <h4> <strong>OUR LOCATION</strong> </h4>
-           <p>
-               239 ถ. ห้วยแก้ว ต.สุเทพ อ. เมือง จ. เชียงใหม่ 50200 <br/>
-               โทรศัพท์ : 0-5394-3414-16  <br/>
-               โทรสาร : 0-5389-2281 <br/>
-               E-mail : compsci@cmu.ac.th
-           </p>
-       </div>
-   </div>
-</div>
-</section>         
-<!--/.FOOTER END-->
-<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-<!-- CORE JQUERY  -->
-<script src="assets/plugins/jquery-1.10.2.js"></script>
-<!-- BOOTSTRAP SCRIPTS  -->
-<script src="assets/plugins/bootstrap.js"></script>
-<!-- CUSTOM SCRIPTS  -->
-<script src="assets/js/custom.js"></script>
+     </div>
+ </section>         
+ <!--/.FOOTER END-->
+ <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+ <!-- CORE JQUERY  -->
+ <script src="assets/plugins/jquery-1.10.2.js"></script>
+ <!-- BOOTSTRAP SCRIPTS  -->
+ <script src="assets/plugins/bootstrap.js"></script>
+ <!-- CUSTOM SCRIPTS  -->
+ <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -91,13 +91,14 @@
                 <a href="blog.php"><img src="assets/img/logo.jpg" alt="logo" style="width:180px;height:70px;"></a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="blog.php">BLOG</a></li>
-                    <li><a href="health_calculator.html">Health Calculator</a></li>
-                    <li><a href="InputInformation.php">input information</a></li>
-                    <li><a href="logout.php">Logout</a></li>
-                </ul>
-            </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="login.html">ADMIN</a></li>
+                    </ul>
+                </div>
         </div>
     </div>
         <!--/.NAVBAR END-->

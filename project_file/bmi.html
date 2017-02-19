@@ -20,6 +20,14 @@
 
     </head>
     <body >
+    <?php
+        if (isset($_GET['submit'])) {
+            $val1 = htmlentities($_GET['weight']);
+            $val2 = htmlentities($_GET['height']);
+            $result = $val1 / ($val2 / 100)**2;
+            
+        }
+    ?>
 
         <div class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container">
@@ -59,19 +67,24 @@
                  
                         <div class="row text-center pad-row">
                             <div class="alert alert-info">
-                                
+                                    <form action="" method="get">
                                     <label for="weight">Weight (kg.)</label>
-                                    <input type="text"  id="weight" placeholder="Weight" style="width: 50%;" data-validation="weight"> <br><br>
+                                    <input type="text"  id="weight" name="weight" placeholder="Weight" style="width: 50%;" data-validation="weight"> <br><br>
 
                                     <label for="height">height (cm.)</label>
-                                    <input type="text"  id="height" placeholder="Height" style="width: 50%;" data-validation="height"> <br><br>
+                                    <input type="text"  id="height" name="height" placeholder="Height" style="width: 50%;" data-validation="height"> <br><br>
 
-                                    <input type="submit" value="คำนวณ">
-
+                                    <input type="submit" name="submit" value="คำนวณ">
+                                    </form>
                                 </div>
                             </div>
-                 
-
+                            <h1>
+                            <?php if( isset($result) ){
+                                    echo ($result);
+                                }else {
+                                    echo (0);
+                                    }  ?>
+                                    </h1>
 
 
 

@@ -80,12 +80,11 @@ session_start()
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="CheckUserInput.php">Blood Logo</a>
+        <img src="assets/img/logo.jpg" alt="logo" style="width:180px;height:70px;">
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="blog.php">BLOG</a></li>
-        <li><a href="health_calculator.html">Health Calculator</a></li>
         <li><a href="InputInformation.php">input information</a></li>
         <li><a href="logout.php">Logout</a></li>
     </ul>

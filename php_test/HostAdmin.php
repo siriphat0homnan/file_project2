@@ -20,7 +20,17 @@
 
       </head>
       <body >
-
+        <script>
+            function myFunction() {
+                var x;
+                if (confirm("If you confirm!") == true) {
+                    x = "You pressed OK!";
+                } else {
+                    x = "You pressed Cancel!";
+                }
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
 
         <?php
         session_start();
@@ -39,7 +49,6 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="health_calculator.html">Health Calculator</a></li>
                 <li><a href="InputInformation.php">input information</a></li>
                 <li><a href="index.html">Logout</a></li>
               </ul>
@@ -106,7 +115,7 @@
             </div>
 
             <div class="alert alert-warning">
-              ยืนยัน:  <input type="submit" value="Submit">
+              ยืนยัน:  <input type="submit" value="Submit" onclick="myFunction()">
 
             </div>
 

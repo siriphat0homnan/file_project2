@@ -68,7 +68,7 @@
 
       </head>
       <body >
-      <?php session_start(); ?>
+        <?php session_start(); ?>
         <div class="navbar navbar-inverse navbar-fixed-top" >
           <div class="container">
             <div class="navbar-header">
@@ -77,14 +77,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand" href="CheckUserInput.php">Blood Logo</a>
+              <a class="navbar-brand" href="admin.html">Blood Logo</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="blog.php">BLOG</a></li>
-                <li><a href="health_calculator.html">Health Calculator</a></li>
-                <li><a href="InputInformation.php">input information</a></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+               
+                <li><a href="input_informationA.php">input information</a></li>
+                <li><a href="index.html">Logout</a></li>
               </ul>
             </div>
 
@@ -93,45 +93,48 @@
         <!--/.NAVBAR END-->
 
         <section id="intro">
-          <div style="border: 1px solid #F9D9D9; padding-left: 10%; padding-top: 1%; background-color: #F9D9D9;">
-            <h3>ข้อมูลผู้บริจาค</h3> <br>
+        <div class="col text-left navbar col-md-12 col-sm-12">
+          <div style="border: 1px solid #F9D9D9; padding-left: 40%; padding-top: 1%; background-color: #F9D9D9;">
+            <u><h3>ข้อมูลผู้บริจาค</h3></u> <br>
           </div>
 
           <form method="post" name="myForm" action="data.php" onsubmit="return validateForm();" >
             <div class="floating-box">
               <label for="Sname">ชื่อ:</label>
-              <input type="text" class="form-control" name="Sname" placeholder="ชื่อ" style="width: 80%;"> <br>
+              <input type="text" class="form-control" name="Sname" placeholder="ชื่อ" pattern="[ก-ฮะาิีึืุูเแัโำไใ์ฤฦ]{2,100}" title="กรุณากรอกชื่อเป็นภาษาไทย: กฤตภาสต์" style="width: 80%;"> <br>
 
               <label for="date" >เดือน/วัน/ปีเกิด:</label> <input type="date" name="bday" class="form-control" style="width: 80%;"> <br>
 
               <label for="id">เลขบัตรระจำตัวประชาชน: </label>
-              <input type="number" pattern=".{13,}" maxlength="13" class="form-control" name="Sid"  style="width: 50%;"> <br>
+              <input type="text" pattern="[0-9]{13}" maxlength="13" class="form-control" name="Sid" title="เช่น 85711xxxxxxxx" style="width: 50%;"> <br>
               <label for="address">ที่อยู่:</label>
-              <input type="text" class="form-control" name="address" placeholder="Address" style="width: 100%; height: 100%;"> <br>
+              <input type="text" class="form-control" name="address" style="width: 100%; height: 100%;"> <br>
               <label for="tel">เบอร์โทรศัพท์ที่สามารถติดต่อได้:</label>
-              <input type="number" class="form-control" name="tel" maxlength="10" onclick="checkTel()" placeholder="ตัวอย่าง 089XXXXXX" style="width: 50%; height: 50%;"> <br><br>
+              <input type="text" pattern="[0-9]{10}" class="form-control" name="tel" maxlength="10" onclick="checkTel()" title="เช่น 082-xxxxxxx" style="width: 50%; height: 50%;"> <br><br>
 
 
               <label for="blood" >หมู่เลือด:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
               <input type="radio" name="blood"  checked> A &nbsp;&nbsp;
               <input type="radio" name="blood" >  B &nbsp;&nbsp;
               <input type="radio" name="blood" > O &nbsp;&nbsp;
-              <input type="radio" name="blood" > AB <br>
-              
-              <br><br>
-
+              <input type="radio" name="blood" > AB 
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="blood" > A- &nbsp;&nbsp;
+              <input type="radio" name="blood" >  B- &nbsp;&nbsp;
+              <input type="radio" name="blood" > O- &nbsp;&nbsp;
+              <input type="radio" name="blood" > AB-
 
             </div>
 
             <div class="floating-box" style="padding-left: 0%;">
               <label for="Lname">นามสกุล:</label>
-              <input type="text" class="form-control" name="Lname" placeholder="สกุล" style="width: 50%;"> <br><br>
+              <input type="text" class="form-control" name="Lname" pattern="[ก-ฮะาิีึืุูเแัโำไใ์ฤฦ]{2,100}" title="กรุณากรอกนามสกุลเป็นภาษาไทย: โอภาสกุล" placeholder="สกุล" style="width: 50%;"> <br><br>
               <label for="gender" >เพศ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
               <input type="radio" name="gender" value="male" checked> ชาย &nbsp;&nbsp;
               <input type="radio" name="gender" value="female">  หญิง<br><br><br>
 
               <label for="job">อาชีพ:</label>
-              <input type="radio" name="job" value="student" checked>&nbsp;นักเรียน/นักึกษา &nbsp;&nbsp;
+              <input type="radio" name="job" value="student" checked>&nbsp;นักเรียน/นักศึกษา &nbsp;&nbsp;
               <input type="radio" name="job" value="police">&nbsp;ข้าราชการ,ทหาร,ตำรวจ,พนักงานรัฐวิสาหกิจ  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="radio" name="job" value="employee">&nbsp;พนักงานบริษัท,พนักงานรับจ้าง &nbsp;&nbsp;
               <input type="radio" name="job" value="monk">&nbsp;พระภิกษุ,สามเณร &nbsp;&nbsp;
@@ -141,16 +144,15 @@
               <br><br><br>
               <br><br><br>
               <label for="mail">E-mail:</label>
-              <input type="email" class="form-control" id="mail" placeholder="E-mail" style="width: 50%;" data-validation="email"> <br>
+              <input type="email" class="form-control" id="mail" placeholder="E-mail" style="width: 50%;" data-validation="email" title="เช่น example@email.com"> <br>
               <label for="disease">โรคประจำตัว:</label>
               <input type="text" class="form-control" id="disease" placeholder="congenital disease" style="width: 50%;"> <br>
             </div>
             <br><br>
             <div style="padding-left: 45%; border: 3px solid #F9D9D9; background-color: #F9D9D9;">
               <button type="submit" class="btn btn-default">Submit</button>
-              </  div>    
+              </div>    
             </form>
-
             <script>
              $.validate({
                modules: 'security, file',
@@ -159,7 +161,7 @@
                }
              });
            </script>
-
+           </div>
          </section>
 
          <!--/.JUST-INTRO END-->

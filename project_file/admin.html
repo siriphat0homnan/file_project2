@@ -20,7 +20,7 @@
 
     </head>
     <body >
-
+     
         <div class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container">
                 <div class="navbar-header">
@@ -34,7 +34,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="health_calculator.html">Health Calculator</a></li>
+                        
                         <li><a href="InputInformationH.html">input information</a></li>
                         <li><a href="index.html">Logout</a></li>
 
@@ -63,13 +63,36 @@
             </div>
 
             <!-- end left profile admin -->
-            <br><br>
-            <div class="col text-center navbar col-md-2 col-sm-2" style="margin-left: 15% ">
+            
+            <div class="col text-center navbar col-md-4 col-sm-4" >
+                <br><br>
+                <div class="alert alert-warning">
+                    <h2>ต้องการรับเลือด</h2>
+                    กรุ๊ปเลือด:  
+                    <form>
+                      <select id="hospital" name="hospital">
+                        <option value="1">O</option>
+                        <option value="2">A</option>
+                        <option value="3">B</option>
+                        <option value="4">AB</option>
+                        <option value="5">O-</option>
+                        <option value="6">A-</option>
+                        <option value="7">B-</option>
+                        <option value="8">AB-</option>
+                      
+                    </select>
+                </form>
+            </div>
+            
+            <div class="alert alert-warning">
+                    กรอกจำนวนเลือด:  <input type="text" id="num_blood" name="numblood" placeholder="ส่งจำนวนเลือด">
+                    
+            </div>
 
-                <div class="row text-left pad-row">
-                    <a href="questionaire.html"><button class="button_bmi">เช็คว่าบริจาคเลือดได้ไหม</button></a>
-
-                </div>
+            <div class="alert alert-warning">
+                    ยืนยัน:  <input type="submit" value="Submit">
+                    
+            </div>
             </div>
 
 
