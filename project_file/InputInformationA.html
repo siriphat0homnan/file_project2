@@ -100,8 +100,8 @@
           <form method="post" name="myForm" action="hello.php" onsubmit="return validateForm();" >
             <div class="floating-box">
               <label for="Sname">ชื่อ:</label>
-              <input type="text" class="form-control" name="Sname" placeholder="ชื่อ" style="width: 80%;"> <br>
-
+              <input type="text" class="form-control" name="Sname"  placeholder="ชื่อ" style="width: 80%;"> <br>
+ 
               <label for="date" >เดือน/วัน/ปีเกิด:</label> <input type="date" name="bday" class="form-control" style="width: 80%;"> <br>
 
               <label for="id">เลขบัตรระจำตัวประชาชน: </label>
@@ -109,7 +109,7 @@
               <label for="address">ที่อยู่:</label>
               <input type="text" class="form-control" name="address" placeholder="Address" style="width: 100%; height: 100%;"> <br>
               <label for="tel">เบอร์โทรศัพท์ที่สามารถติดต่อได้:</label>
-              <input type="tel" class="form-control" name="tel" maxlength="10" onclick="checkTel()" placeholder="ตัวอย่าง 089XXXXXX" style="width: 50%; height: 50%;"> <br><br>
+              <input type="text" class="form-control" pattern="[0-9]{10}" name="tel" maxlength="10" onclick="checkTel()" placeholder="ตัวอย่าง 089XXXXXX" style="width: 50%; height: 50%;"> <br><br>
 
 
               <label for="blood" >หมู่เลือด:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -117,6 +117,12 @@
               <input type="radio" name="blood" >  B &nbsp;&nbsp;
               <input type="radio" name="blood" > O &nbsp;&nbsp;
               <input type="radio" name="blood" > AB 
+              
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="blood" > A- &nbsp;&nbsp;
+              <input type="radio" name="blood" >  B- &nbsp;&nbsp;
+              <input type="radio" name="blood" > O- &nbsp;&nbsp;
+              <input type="radio" name="blood" > AB-
               <br><br>
 
 
@@ -124,7 +130,7 @@
 
             <div class="floating-box" style="padding-left: 0%;">
               <label for="Lname">นามสกุล:</label>
-              <input type="text" class="form-control" name="Lname" placeholder="สกุล" style="width: 50%;"> <br><br>
+              <input type="text" class="form-control" name="Lname" placeholder="สกุล" pattern="[a-zA-Z]" style="width: 50%;"> <br><br>
               <label for="gender" >เพศ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
               <input type="radio" name="gender" value="male" checked> ชาย &nbsp;&nbsp;
               <input type="radio" name="gender" value="female">  หญิง<br><br><br>

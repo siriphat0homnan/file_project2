@@ -270,7 +270,7 @@ table, td, th {
     border: 1px solid black;
 }
 /*end table*/
-.button {
+.button_bmi {
   display: inline-block;
   padding: 5px 5px;
   font-size: 24px;
@@ -285,9 +285,9 @@ table, td, th {
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #FC1F52}
+.button_bmi:hover {background-color: #FC1F52}
 
-.button:active {
+.button_bmi:active {
   background-color: #FC1F52;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
