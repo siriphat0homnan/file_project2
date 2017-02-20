@@ -77,7 +77,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="admin.html">Blood Logo</a>
+              <a href="CheckUserInput.php"><img src="assets/img/logo.jpg" alt="logo" style="width:180px;height:70px;"></a>
+              
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">

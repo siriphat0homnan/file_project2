@@ -48,7 +48,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="blog.html">BLOG</a></li>
 
-                        <li><a href="InputInformationH.html">input information</a></li>
+                        <li><a href="InputInformation.php">input information</a></li>
                         <li><a href="index.html">Logout</a></li>
 
                     </ul>
